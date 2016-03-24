@@ -1,0 +1,23 @@
+.dirigible-picker {
+  @include divider-top;
+  border-style: dashed;
+}
+
+.dirigiblog {
+  @include divider-top;
+  border-style: dashed;
+
+  .post {
+    margin-bottom: 2.0em;
+
+    @include breakpoint($breakpoint-l) {
+      @include column(6);
+    }
+
+    &:last-of-type {
+      @include breakpoint($breakpoint-l) {
+        @include last;
+      }
+    }
+  }
+}

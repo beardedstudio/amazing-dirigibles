@@ -77,6 +77,25 @@ ul, ol {
   }
 }
 
+.main-content {
+  @include breakpoint($breakpoint-l) {
+    @include pie-clearfix;
+  }
+}
+
+.primary {
+  @include breakpoint($breakpoint-l) {
+    @include column(8);
+  }
+}
+
+.sidebar {
+  @include breakpoint($breakpoint-l) {
+    @include column(4);
+    @include last;
+  }
+}
+
 ///// Headings
 
 h1 {

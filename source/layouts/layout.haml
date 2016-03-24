@@ -29,9 +29,10 @@
 
     = partial "partials/_site-header"
 
-    %main.main-content{role: 'main'}
+    %main.main-content
       .container
-        = yield
+        %section.primary
+          = yield
         = partial "partials/_sidebar"
 
     = partial "partials/_site-footer"
