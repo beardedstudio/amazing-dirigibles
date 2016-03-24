@@ -21,3 +21,36 @@
     }
   }
 }
+
+.telegraph {
+  margin-bottom: 1.5em;
+
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sightings {
+  @include breakpoint($breakpoint-s) {
+    @include pie-clearfix;
+  }
+}
+
+.sighting {
+  margin-bottom: 1em;
+  @include breakpoint($breakpoint-s) {
+    @include column(4);
+    margin-bottom: 0;
+  }
+  &:last-of-type {
+    @include breakpoint($breakpoint-s) {
+      @include last;
+    }
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
