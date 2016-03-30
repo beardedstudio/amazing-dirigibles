@@ -61,7 +61,7 @@ ul, ol {
 
 .primary {
   ul, ol {
-    margin: 0 0 0.5em 2em;
+    margin: 0 0 0.5em 0;
     li {
       margin-bottom: 0.5em;
     }
@@ -84,6 +84,7 @@ ul, ol {
 }
 
 .primary {
+  margin-bottom: 2.0em;
   @include breakpoint($breakpoint-l) {
     @include column(8);
   }
@@ -141,6 +142,13 @@ img {
   display: block;
 }
 
+button {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
 .button {
   @include button;
 }
@@ -170,7 +178,7 @@ img {
 // Other elements
 //////////////////////////////////////
 
-.screenreader-text {
+.visually-hidden {
   @include screenreader-text;
 }
 
