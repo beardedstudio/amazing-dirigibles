@@ -1,14 +1,16 @@
-$text-color: #454440;
+$text-color: #3f3e3b;
 $heading-color: $text-color;
 $text-color-subtle: lighten($text-color, 30%);
 
-$link-color: #63a2c0;
+$link-color: #73c5eb;
 $link-color-hover: darken($link-color, 15%);
 
 $highlight-color: #333;
 $highlight-color-hover: darken($highlight-color, 15%);
 
 $border-color: #ccc;
+
+$deactive-color: #B7B7AF;
 
 $background-color: #e4e1d9;
 $background-color-subtle: #eee;

@@ -1,13 +1,23 @@
 // typographic mixins and extends
 
 @mixin copy-face {
-  font-family: georgia, "Times New Roman", times, serif;
-  font-weight: normal;
+  font-family: "clarendon-text-pro", georgia, "Times New Roman", times, serif;
+  font-weight: 400;
 }
 
 @mixin title-face {
-  font-family: arial, "helvetica neue", helvetica, sans-serif;
-  font-weight: bold;
+  font-family: "alternate-gothic-no-1-d", "helvetica neue", helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@mixin reversed-text-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin no-text-smoothing {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 @mixin link {
@@ -40,6 +50,7 @@
 
 @mixin heading {
   @include title-face;
+  @include reversed-text-smoothing;
   margin-bottom: 0.35em;
   line-height: 1.2;
   color: $heading-color;

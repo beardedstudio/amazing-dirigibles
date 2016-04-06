@@ -1,21 +1,28 @@
-.rental-progress {
+.primary .rental-progress {
+  background-color: $deactive-color;
+  margin-bottom: 2em;
   ol {
     counter-reset: progress-counter;
     display: flex;
     list-style-type: none;
-    margin-left: 1.25em;
+    padding: 1px;
   }
   li {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     width: 25%;
+    margin-bottom: 0;
+    padding: 1em 0;
 
     &:before {
       content: counter(progress-counter);
       counter-increment: progress-counter;
       text-align: center;
       width: 100%;
+    }
+    &.active {
+      background-color: $background-color;
     }
 
     span {

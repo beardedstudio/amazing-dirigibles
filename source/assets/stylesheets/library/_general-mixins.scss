@@ -43,11 +43,12 @@
 }
 
 @mixin button {
+  @include copy-face;
   border-radius: 4px 4px;
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  color: $background-color;
+  color: $text-color;
   background-color: $link-color;
   &:hover,
   &:focus {

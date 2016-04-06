@@ -1,11 +1,16 @@
 %header.site-header
   .container
-    %h1.site-name
+    %h1.site-name.visually-hidden
       Finneous T. Clouderhoof's Amazing Dirigibles
+
+    .hero-image
+      = image_tag 'assets/images/hero-image.gif'
 
     %section.mobile-navigation
       %button.menu-trigger
         %span.icon-menu
         %span.trigger-text Menu
 
+.primary-navigation-wrapper
+  .container
     = partial 'partials/primary-navigation'

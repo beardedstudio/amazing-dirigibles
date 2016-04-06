@@ -43,7 +43,7 @@ activate :patterns
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  # set :typekit_id, 'xxxxxxx'
+  set :typekit_id, 'wqu3lse'
 end
 
 set :haml, { :ugly => true, :format => :html5 }
@@ -72,7 +72,7 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-  # set :typekit_id, 'xxxxxxx'
+  set :typekit_id, 'wqu3lse'
 
   # Enable cache buster
   # activate :asset_hash

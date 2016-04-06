@@ -8,6 +8,7 @@ ul.dirigibles-group {
 }
 
 .dirigible-item {
+  text-align: center;
   @include breakpoint($breakpoint-m) {
     @include column(4);
   }
@@ -16,6 +17,11 @@ ul.dirigibles-group {
     @include breakpoint($breakpoint-m) {
       @include last;
     }
+  }
+  .d-select {
+    margin: 1em auto;
+    @include button;
+    font-size: 1em;
   }
 }
 

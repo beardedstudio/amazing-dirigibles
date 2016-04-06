@@ -1,5 +1,10 @@
 .site-header {
   @include pie-clearfix;
+  background: $background-color url("/assets/images/bg-header.jpg") center top no-repeat;
+
+  @include breakpoint($breakpoint-max) {
+    background-size: 100% auto;
+  }
 
   .site-name {
     @include heading-4;
@@ -16,4 +21,12 @@
   .mobile-navigation {
     float: right;
   }
+
+  .hero-image {
+    margin-bottom:2em;
+  }
+}
+
+.primary-navigation-wrapper {
+  background-color: $background-color;
 }

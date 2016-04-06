@@ -20,7 +20,7 @@
 }
 
 html {
-  background-color: $footer-bg-color;
+  //background-color: $footer-bg-color;
 }
 
 .main-content {
@@ -78,21 +78,23 @@ ul, ol {
 }
 
 .main-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
   @include breakpoint($breakpoint-l) {
     @include pie-clearfix;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 
 .primary {
   margin-bottom: 2.0em;
-  @include breakpoint($breakpoint-l) {
-    @include column(8);
-  }
+
 }
 
 .sidebar {
   @include breakpoint($breakpoint-l) {
-    @include column(4);
+    @include column(3);
     @include last;
   }
 }
@@ -121,6 +123,15 @@ h5 {
 
 h6 {
   @include heading-6;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  
+  @include breakpoint($breakpoint-l) {
+    font-size: 5em;
+  }
 }
 
 ////////// Inline Elements
