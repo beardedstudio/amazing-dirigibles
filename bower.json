@@ -7,6 +7,7 @@
     "jrespond": "*"
   },
   "devDependencies": {
-    "jquery": "~2.2.2"
+    "jquery": "~2.2.2",
+    "pickadate": "^3.5.6"
   }
 }
