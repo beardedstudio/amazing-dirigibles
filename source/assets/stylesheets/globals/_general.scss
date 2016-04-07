@@ -20,7 +20,7 @@
 }
 
 html {
-  //background-color: $footer-bg-color;
+  background: url("/assets/images/bg-footer.jpg") repeat;
 }
 
 .main-content {
@@ -133,6 +133,42 @@ h6 {
     font-size: 5em;
   }
 }
+
+h2.section-title {
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: darken($heading-color, 10%);
+  @include breakpoint($breakpoint-m) {
+    font-size: 1.8em;
+    text-shadow: 2px 2px 0 $background-color;
+  }
+  @include breakpoint($breakpoint-l) {
+    font-size: 2.5em;
+  }
+  .title-text {
+    background: $background-color-alt;
+    padding: 0.5em 0.5em 0.25em 0.5em;
+    border-top: 1px solid darken($heading-color, 10%);
+    border-bottom: 1px solid darken($heading-color, 10%);
+    letter-spacing: 1px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    box-shadow: 1px 0 5px rgba(0,0,0,0.2);
+    @include breakpoint($breakpoint-m) {
+      border-top: 2px solid darken($heading-color, 10%);
+      border-bottom: 2px solid darken($heading-color, 10%);
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+  }
+  .icon-bg-arrow {
+    margin: 0.2em auto;
+  }
+}
+
 
 ////////// Inline Elements
 

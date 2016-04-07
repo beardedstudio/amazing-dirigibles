@@ -61,6 +61,7 @@
 
     @include breakpoint($breakpoint-nav) {
       display: inline-block;
+      @include title-face;
       @include divider-none;
       text-align: left;
     }
@@ -69,6 +70,9 @@
       padding-top: 0;
       margin-top: 0;
       border-top: 0 none;
+    }
+    a{
+      text-decoration:none;
     }
   }
 }

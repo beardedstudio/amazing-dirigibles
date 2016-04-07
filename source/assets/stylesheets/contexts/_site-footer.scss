@@ -1,6 +1,44 @@
 .site-footer {
+  background: url("/assets/images/bg-footer.jpg") repeat;
+  @include pie-clearfix;
   > .container {
-    padding-top: 1.0em;
-    padding-bottom: 1.0em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    @include pie-clearfix;
+  }
+
+  .associations {
+    @include breakpoint($breakpoint-xxs) {
+      text-align: center;
+    }
+
+    @include breakpoint($breakpoint-m) {
+      @include column(6);
+      @include last;
+      float: right;
+      text-align: right;
+    }
+  }
+
+  .icon-nadba, .icon-builtbybearded {
+    margin: 0 auto 2em auto;
+    @include breakpoint($breakpoint-xxs) {
+      display: inline-block;
+      margin-right: 1.5em;
+      margin-left: 1.5em
+    }
+  }
+  .icon-nadba {
+    @include breakpoint($breakpoint-xxs) {
+      width: 85px;
+    }
+  }
+  .copyright {
+    @include reversed-text-smoothing;
+    font-size: 0.875em;
+    color: shade($background-color, 30%);
+    @include breakpoint($breakpoint-m) {
+      @include column(6);
+    }
   }
 }

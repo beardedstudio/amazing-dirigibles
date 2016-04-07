@@ -14,25 +14,25 @@
 
 @mixin divider-bottom {
   padding-bottom: 1em;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 2px dashed $border-color;
   margin-bottom: 1em;
 }
 
 @mixin divider-top {
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 2px dashed $border-color;
   margin-top: 1em;
 }
 
 @mixin divider-right {
   padding-right: 1em;
-  border-right: 1px solid $border-color;
+  border-right: 2px dashed $border-color;
   margin-right: 1em;
 }
 
 @mixin divider-left {
   padding-left: 1em;
-  border-left: 1px solid $border-color;
+  border-left: 2px dashed $border-color;
   margin-left: 1em;
 }
 
@@ -46,7 +46,7 @@
   @include copy-face;
   border-radius: 4px 4px;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.72em 1em;
   text-decoration: none;
   color: $text-color;
   background-color: $link-color;
@@ -54,7 +54,7 @@
   &:focus {
     text-decoration: none;
     background-color: $link-color-hover;
-    color: $background-color;
+    color: $text-color;
   }
 }
 

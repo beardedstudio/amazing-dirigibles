@@ -12,10 +12,32 @@
 }
 
 $icons:
-menu;
+menu,
+builtbybearded,
+nadba,
+bg-arrow;
 
 @each $icon in $icons {
   .icon-#{$icon} {
     @extend %icon-base;
   }
 }
+
+.icon-nadba {
+  width: 75px;
+  height: 100px;
+  display:block;
+}
+
+.icon-builtbybearded {
+  width: 65px;
+  height: 100px;
+  display:block;
+}
+
+.icon-bg-arrow {
+  height: 21px;
+  width: 110px;
+  display: block;
+}
+

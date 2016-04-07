@@ -1,4 +1,10 @@
+.icon-bg-arrow { background-image: url('png/bg-arrow.png'); background-repeat: no-repeat; }
+
+.icon-builtbybearded { background-image: url('png/builtbybearded.png'); background-repeat: no-repeat; }
+
 .icon-menu { background-image: url('png/menu.png'); background-repeat: no-repeat; }
+
+.icon-nadba { background-image: url('png/nadba.png'); background-repeat: no-repeat; }
 
 .icon-search { background-image: url('png/search.png'); background-repeat: no-repeat; }
 

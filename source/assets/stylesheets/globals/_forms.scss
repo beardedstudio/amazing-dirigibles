@@ -24,14 +24,16 @@ textarea {
   margin-right: 0;
   width: 100%;
   max-width: 500px;
-  border: 1px $border-color solid;
+  font-size: 0.9em;
+  border: 1px $background-color solid;
 }
 
 select {
-  height: 3em;
+  height: 3.1em;
   line-height: 2.5em;
-  border: 1px solid $border-color;
+  border: 1px solid $background-color;
   width: 100%;
+  font-size: 0.9em;
 }
 
 form label {
@@ -62,12 +64,14 @@ form .input {
 
 .two-up {
   @include clearfix;
-  > .input {
-    @include column(6);
-    margin-right: 0;
-    margin-left: $gutter-width;
-    &:first-child {
-      margin-left: 0;
+  @include breakpoint($breakpoint-xs) {
+    > .input, button {
+      @include column(6);
+      margin-right: 0;
+      margin-left: $gutter-width;
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -88,14 +92,15 @@ form .input {
 
 .three-up {
   @include clearfix;
+  @include breakpoint($breakpoint-xs) {
+    .input {
+      @include column(4);
+      margin-right: 0;
+      margin-left: $gutter-width;
 
-  .input {
-    @include column(4);
-    margin-right: 0;
-    margin-left: $gutter-width;
-
-    &:first-child {
-      margin-left: 0;
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 

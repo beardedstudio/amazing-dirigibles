@@ -10,6 +10,13 @@
   font-weight: 400;
 }
 
+
+@mixin alt-face {
+  font-family: "franklin-gothic-urw-cond", "helvetica neue", helvetica, sans-serif;
+  font-weight: 500;
+}
+
+
 @mixin reversed-text-smoothing {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,7 +59,7 @@
   @include title-face;
   @include reversed-text-smoothing;
   margin-bottom: 0.35em;
-  line-height: 1.2;
+  line-height: 1;
   color: $heading-color;
   text-transform: uppercase;
   a {
@@ -62,27 +69,27 @@
 
 @mixin heading-1 {
   @include heading;
-  font-size: 2.5em;
+  font-size: 3em;
 }
 
 @mixin heading-2 {
   @include heading;
-  font-size: 1.8em;
+  font-size: 2.6em;
 }
 
 @mixin heading-3 {
   @include heading;
-  font-size: 1.4em;
+  font-size: 2.4em;
 }
 
 @mixin heading-4 {
   @include heading;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 @mixin heading-5 {
   @include heading;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 @mixin heading-6 {
