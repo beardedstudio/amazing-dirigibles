@@ -1,6 +1,9 @@
 .primary .rental-progress {
   @include divider-bottom;
   margin-bottom: 2em;
+  @include breakpoint($breakpoint-l) {
+    margin-bottom: 4em;
+  }
 
   ol {
     counter-reset: progress-counter;
