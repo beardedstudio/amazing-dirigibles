@@ -9,6 +9,7 @@ gem "middleman-patterns", "~> 0.2"
 gem "middleman-autoprefixer", "~> 2.4.4"
 gem "haml", "~> 4.0.6"
 gem "puma", "~> 2.11.3"
+gem "rake", "~> 10.0.4"
 
 group :development do
   gem 'heroku', '~> 3.41.5'

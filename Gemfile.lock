@@ -127,6 +127,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.0.4)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -172,6 +173,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   middleman-patterns (~> 0.2)
   puma (~> 2.11.3)
+  rake (~> 10.0.4)
 
 BUNDLED WITH
    1.11.2
