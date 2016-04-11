@@ -6,8 +6,5 @@
     "breakpoint-sass": "~2.6.1",
     "jrespond": "*",
     "pickadate": "^3.5.6"
-  },
-  "devDependencies": {
-    "jquery": "~2.2.2",
   }
 }
